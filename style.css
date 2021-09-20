@@ -5,11 +5,14 @@
   }
 
   @media screen and (max-width:400px){
+     body{
+     background-color: #eedcc4;
+    }
     footer{
         background-color: #eedcc4;
-        color:#0c1b3c;
-        position:sticky;
-        width:360px;
+        color: #0c1b3c;
+        position: sticky;
+        width: 360px;
         margin-top: 450px;
         background-image: url("pasta.png");
         background-repeat: no-repeat;
@@ -29,19 +32,22 @@
      text-align: center;
     } 
     p{
-        font-size:18px;
+        font-size: 18px;
     }
     i{
-        margin-left:20px;
+        margin-left: 20px;
     }
   }
 
 @media screen and (min-width: 1000px){
+        body{
+        background-color: #eedcc4;
+    }
 
 footer{
     background-color: #eedcc4;
-    color:#0c1b3c;
-    position:sticky;
+    color: #0c1b3c;
+    position: sticky;
     margin-top: 450px;
     background-image: url("pasta.png");
     background-repeat: no-repeat;
