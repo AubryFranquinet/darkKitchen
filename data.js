@@ -4,7 +4,7 @@ const data = [
         description: 'Tomato, picked garlic, parmesan',
         picture: './images/antipasto/bruschetta.jpg',
         price: 11,
-        category: 'antipasto'
+        category: 'antipasto',
     },
     {
         name: 'Warm marinated olives',
@@ -12,9 +12,7 @@ const data = [
         picture: './images/antipasto/warm-marinated-olives.jpg',
         price: 8,
         category: 'antipasto',
-        tags: { 
-            vegatarian: 'url' 
-        }
+        vegan: true
     },
     {
         name: 'Fried roman artichoke',
@@ -22,9 +20,7 @@ const data = [
         picture: './images/antipasto/fried-roman-artichoke.jpg',
         price: 8,
         category: 'antipasto',
-        tags: {
-            vegan: 'url'
-        }
+        vegan: true
     },
     {
         name: 'Vongole bianco',
@@ -38,7 +34,7 @@ const data = [
         description: 'Pancetta bacon with shallots in a parmesan cream sauce over fettuccine',
         picture: './images/pasta/fettucine-carbonara.jpg',
         price: 13,
-        category: 'pasta'
+        category: 'pasta',
     },
     {
         name: 'Pumpkin',
@@ -46,19 +42,14 @@ const data = [
         picture: './images/pasta/pumpkin.jpg',
         price: 13,
         category: 'pasta',
-        tags: {
-            vegan: 'url' 
-        }
+        vegan: true
     },
     {
         name: 'Squash Ravioli',
         description: 'House-made ravioli stuffed with butternut squash in a browned-butter sage sauce',
         picture: './images/pasta/squash-ravioli.jpg',
         price: 16,
-        category: 'pasta',
-        tags: {
-            vegetarian: 'url' 
-        }
+        category: 'pasta'
     },
     {
         name: 'Marinara',
@@ -66,9 +57,7 @@ const data = [
         picture: './images/pizza/marinara.jpg',
         price: 9,
         category: 'pizza',
-        tags: {
-            vegan: 'url' 
-        }
+        vegan: true
     },
     {
         name: 'Florentine',
@@ -118,9 +107,6 @@ const data = [
         description: 'a rich fudge brownie, served with French Vanilla bean ice cream',
         picture: './images/desserts/baked-pears.jpg',
         price: 6.5,
-        category: 'dessert',
-        tags: {
-            vegan: 'url'
-        }
-    },
+        category: 'dessert'
+    }
 ]
