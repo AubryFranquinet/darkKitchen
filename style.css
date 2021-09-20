@@ -1,0 +1,111 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700,800,900,500italic,400italic,100italic,900italic,300italic,700italic,800italic);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #333;
+    width: 100%;
+}
+
+p {
+    color: white;
+    font-size: larger;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 16vh;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.links {
+    color: white;
+    margin: 0;
+    padding-top: 10%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+/* unvisited link */
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
+/* selected link */
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    height: 150vh;
+    max-height: 100%;
+    overflow-x: hidden;
+    perspective: 1px;
+    perspective-origin: center top;
+    transform-style: preserve-3d;
+    padding: 0 40px;
+    font: 22.5px Alegreya Sans, serif;
+}
+
+header {
+    height: 80vh;
+    background: url("https://wallpapercave.com/wp/wp1813152.jpg");
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    vertical-align: top;
+    transform-origin: center top;
+    transform: translateZ(-1px) scale(2);
+}
+
+section {
+    min-height: 200vh;
+    background: white;
+    transform: translateZ(0);
+    width: 100%;
+}
