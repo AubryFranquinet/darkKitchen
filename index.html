@@ -18,11 +18,56 @@
             <div class="links">
                 <a href="./index.html">home</a>
                 <a href="./index.html">about</a>
+                <img src="./logo/trolleyWhite.png" alt="basket" onclick="openNav()">
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "250px";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                    }
+                </script>
             </div>
+
+
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+                <!--TEST-->
+
+                <div class="wrap cf">
+
+                    <div class="cart">
+                      
+                        <ul class="cartWrap">
+                            <li class="items odd">
+
+                                <div class="infoWrap">
+                                    <div class="cartSection">
+
+                                        <h3>Item Name 1</h3>
+                                    </div>
+                            </li>
+
+                            <li class="items odd">
+                                <div class="infoWrap">
+                                    <div class="cartSection">
+                                        <h3>Item Name 1</h3>
+                                    </div>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
 
         </header>
         <section>
-            <p>Lorem, ipsum dolor.</p>
+
 
         </section>
     </main>
