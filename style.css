@@ -1,0 +1,20 @@
+footer{
+    background-color: #eedcc4;
+    color:#0c1b3c;
+    position:sticky;
+    margin-top: 450px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #eedcc4;
+}
+.grid-item{
+    margin-left: 300px;
+}
+h1{
+ text-align: center;
+}
+i{
+    white-space: 20px;
+}
