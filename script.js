@@ -19,6 +19,8 @@ x.addListener(openNav) // Attach listener function on state changes
 
 
 /* Set rates + misc */
+
+
 var taxRate = 0.05;
 var shippingRate = 15.00;
 var fadeTime = 300;

@@ -29,6 +29,7 @@ p {
 
 h1 {
     font-size: 16vw;
+    font-weight: 900;
     color: white;
     margin: 0;
     position: absolute;
@@ -95,7 +96,6 @@ main {
     perspective-origin: center top;
     transform-style: preserve-3d;
     padding: 0 10px;
-    font: 22.5px Alegreya Sans, serif;
     justify-content: center;
 }
 
