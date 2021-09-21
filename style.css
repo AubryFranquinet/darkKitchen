@@ -1,10 +1,76 @@
+
 .dark-mode {
     background-color:#0c1b3c;
     filter:grayscale(100%);
     color: white;
   }
 
+  .switch {
+    position: absolute;
+    display: inline-block;
+    width: 30px;
+    height: 17px;
+    top:20px;
+    left:20px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 4px;
+    bottom: 2px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  input:checked + .slider:before{
+    background-color: white;
+  }
+  
+  input:checked + .slider {
+    background-color: black;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(10px);
+    -ms-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  
+  .slider.round {
+    border-radius: 17px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+
+
   @media screen and (max-width:400px){
+      body{
+          background-color:#eedcc4 ;
+      }
     footer{
         background-color: #eedcc4;
         color:#0c1b3c;
@@ -36,7 +102,10 @@
     }
   }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 700px){
+    body{
+        background-color: #eedcc4;
+    }
 
 footer{
     background-color: #eedcc4;
@@ -46,6 +115,68 @@ footer{
     background-image: url("pasta.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #fafafa;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	margin: 0;
+
+}
+
+body.dark {
+	background: #292C35;
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 13px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
 }
 
 .grid{
@@ -57,5 +188,8 @@ footer{
 }
 h1{
  text-align: center;
+}
+i{
+    margin-left:20px;
 }
 }
