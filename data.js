@@ -1,4 +1,4 @@
-const data = [
+ const DISHES = [
     {
         name: 'Bruschetta',
         description: 'Tomato, picked garlic, parmesan',
@@ -110,3 +110,43 @@ const data = [
         category: 'dessert'
     }
 ]
+
+// Dishes section
+let dishes = document.createElement('section');
+dishes.setAttribute('class', 'dishes')
+let main = document.querySelector('main');
+dishes.id = 'dishes';
+
+main.appendChild(dishes);
+
+// Dishes
+for (let i of DISHES) {
+    const dish = document.createElement('div')
+    dish.setAttribute('class', 'dish')
+    dishes.appendChild(dish)
+
+    const picture = document.createElement('img')
+    picture.setAttribute('class', 'picture')
+    picture.src = i.picture
+    dish.appendChild(picture)
+
+    const name = document.createElement('h3')
+    name.setAttribute('class', 'name')
+    name.textContent = i.name
+    dish.appendChild(name)
+
+    const description = document.createElement('p')
+    description.setAttribute('class', 'description')
+    description.textContent = i.description
+    dish.appendChild(description)
+
+    const price = document.createElement('span')
+    price.setAttribute('class', 'price')
+    price.innerText = `${i.price} €`
+    dish.appendChild(price)
+
+    const add_to_cart_btn = document.createElement('button')
+    add_to_cart_btn.setAttribute('class', 'addToCart')
+    add_to_cart_btn.innerText = 'Add to Cart'
+    dish.appendChild(add_to_cart_btn)
+}

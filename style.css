@@ -166,6 +166,25 @@ img {
 }
 
 
+.dishes {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.dish img {
+    width: 100%;
+}
+
+
+
+
 /* ***************TEST************** */
 
 @import "compass/css3";
