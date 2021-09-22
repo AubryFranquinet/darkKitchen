@@ -27,6 +27,7 @@ body {
 .header .dark-mode {
   background-color:#0c1b3c;
   color:whitesmoke;
+  filter: brightness(80%);
 }
 
 .header .switch {
@@ -104,13 +105,13 @@ body {
 .header .moon{
   margin-top:9px;
   margin-left:-19px;
-  z-index:10;
+  z-index:100;
 }
 
 .header .sun {
   margin-top:-18px;
   margin-left:3px;
-  z-index:10;
+  z-index:100;
 }
 
 .header .sidenav {
