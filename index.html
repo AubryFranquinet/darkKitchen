@@ -6,64 +6,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Header</title>
+    <title>Dolcello</title>
 </head>
 
 <body>
     <main>
         <header>
+            <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+                <source src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/GtuAR0I/videoblocks-delicious-italian-pizza-served-on-black-wooden-table-with-various-ingeriends-on-side_bddcfwmzl__244deade4cc05d67604b4fd439a539c7__P360.mp4" type="video/mp4">
+            </video>
             <p class="subtitle">Benvenuti a</p>
             <h1>Dolcello</h1>
 
-            <div class="links">
+            <nav class="links">
                 <a href="./index.html">home</a>
                 <a href="./index.html">about</a>
                 <img src="./logo/trolleyWhite.png" alt="basket" onclick="openNav()">
-                <script>
-                    function openNav() {
-                        document.getElementById("mySidenav").style.width = "250px";
-                    }
+                
+            </nav>
 
-                    function closeNav() {
-                        document.getElementById("mySidenav").style.width = "0";
-                    }
-                </script>
-            </div>
 
-            <div id="mySidenav" class="sidenav">
+            <nav id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-                <!--TEST-->
 
-                <div class="wrap cf">
 
-                    <div class="cart">
-                      
-                        <ul class="cartWrap">
-                            <li class="items odd">
 
-                                <div class="infoWrap">
-                                    <div class="cartSection">
+                <nav class="shopping-cart">
 
-                                        <h3>Item Name 1</h3>
-                                    </div>
-                            </li>
+                    <nav class="column-labels">
+                        <label class="product-image">Image</label>
+                        <label class="product-details">Product</label>
+                        <label class="product-price">Price</label>
+                        <label class="product-quantity">Quantity</label>
+                        <label class="product-removal">Remove</label>
+                        <label class="product-line-price">Total</label>
+                    </nav>
 
-                            <li class="items odd">
-                                <div class="infoWrap">
-                                    <div class="cartSection">
-                                        <h3>Item Name 1</h3>
-                                    </div>
-                                </div>
-                            </li>
+                    <nav class="product">
+                        <nav class="product-image">
+                            <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
+                        </nav>
+                        <nav class="product-details">
+                            <nav class="product-title">Pizza 4 from'</nav>
+                            
+                        </nav>
+                        <nav class="product-price">12.99</nav>
+                        <nav class="product-quantity">
+                            <input type="number" value="2" min="1">
+                        </nav>
+                        <nav class="product-removal">
+                            <button class="remove-product">
+                                Remove
+                            </button>
+                        </nav>
+                        <nav class="product-line-price">25.98</nav>
+                    </nav>
 
-                        </ul>
-                    </div>
+                    <nav class="product">
+                        <nav class="product-image">
+                            <img src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png">
+                        </nav>
+                        <nav class="product-details">
+                            <nav class="product-title">Pasta Pizza</nav>
+                            
+                        </nav>
+                        <nav class="product-price">45.99</nav>
+                        <nav class="product-quantity">
+                            <input type="number" value="1" min="1">
+                        </nav>
+                        <nav class="product-removal">
+                            <button class="remove-product">
+                                Remove
+                            </button>
+                        </nav>
+                        <nav class="product-line-price">45.99</nav>
+                    </nav>
 
-                </div>
-            </div>
+                    <nav class="totals">
+                        <nav class="totals-item">
+                            <label>Subtotal</label>
+                            <nav class="totals-value" id="cart-subtotal">71.97</nav>
+                        </nav>
+                        <nav class="totals-item">
+                            <label>Tax (5%)</label>
+                            <nav class="totals-value" id="cart-tax">3.60</nav>
+                        </nav>
+                        <nav class="totals-item">
+                            <label>Shipping</label>
+                            <nav class="totals-value" id="cart-shipping">15.00</nav>
+                        </nav>
+                        <nav class="totals-item totals-item-total">
+                            <label>Grand Total</label>
+                            <nav class="totals-value" id="cart-total">90.57</nav>
+                        </nav>
+                    </nav>
+
+                    <button class="checkout">Checkout</button>
+
+                </nav>
+
+
+            </nav>
+
+
         </header>
     </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./script.js"></script>
     <script src="data.js"></script>
 </body>
 
