@@ -1,6 +1,6 @@
 .dark-mode {
   background-color:#0c1b3c;
-  color: white;
+  color: whitesmoke;
 }
 
 .switch {
@@ -117,7 +117,7 @@ i{
     content: "";
     height: 13px;
     width: 13px;
-    left: 4px;
+    left: 2px;
     bottom: 2px;
     background-color: black;
     -webkit-transition: .4s;
@@ -132,9 +132,9 @@ i{
   }
   
   input:checked + .slider:before {
-    -webkit-transform: translateX(10px);
-    -ms-transform: translateX(10px);
-    transform: translateX(10px);
+    -webkit-transform: translateX(12px);
+    -ms-transform: translateX(12px);
+    transform: translateX(12px);
   }
   
   .slider.round {
@@ -181,8 +181,8 @@ i{
   }
   .moon{
     font-size:10px;
-    margin-top:3px;
-    margin-left:-15px;
+    margin-top:4px;
+    margin-left:-16.5px;
   }
   .sun {
     font-size:10px;
