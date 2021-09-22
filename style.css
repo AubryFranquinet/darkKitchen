@@ -1,6 +1,7 @@
 .dark-mode {
   background-color:#0c1b3c;
   color:whitesmoke;
+  filter: brightness(80%);
 }
 
 .switch {
@@ -365,8 +366,8 @@ header {
 }
 
 section {
+  margin-top: 400px;
     min-height: 200vh;
-    background: white;
     transform: translateZ(0);
     width: 100%;
 }
