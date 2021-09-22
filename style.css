@@ -1,6 +1,7 @@
 .dark-mode {
   background-color:#0c1b3c;
   color:whitesmoke;
+  filter: brightness(80%);
 }
 
 .switch {
@@ -74,18 +75,18 @@ i{
 #moon{
   margin-top:9px;
   margin-left:-19px;
-  z-index:10;
+  z-index:100;
 }
 #sun {
   margin-top:-18px;
   margin-left:3px;
-  z-index:10;
+  z-index:100;
 }
 
 
 @media screen and (max-width:650px){
   body {
-      background-color:#eedcc4 ;
+      background-color: #eedcc4;
   }
   .switch {
     position: absolute;
@@ -161,6 +162,7 @@ i{
       grid-template-columns: auto auto;
       column-gap: 30px;
   }
+
   #info {
       position: relative;
       text-align: left;
@@ -185,11 +187,13 @@ i{
     font-size:10px;
     margin-top:3px;
     margin-left:-16px;
+    z-index:101;
   }
   .sun {
     font-size:10px;
     margin-top:-12px;
     margin-left:-4px;
+    z-index:101;
   }
 }
 
@@ -203,7 +207,6 @@ footer {
   color: #0c1b3c;
   position: sticky;
   margin-top: 0px;
-  background-image: url("pasta.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -363,8 +366,8 @@ header {
 }
 
 section {
+  margin-top: 400px;
     min-height: 200vh;
-    background: white;
     transform: translateZ(0);
     width: 100%;
 }
