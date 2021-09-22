@@ -72,12 +72,12 @@ i{
   justify-content: space-around;
 }
 .moon{
-  margin-top:8px;
-  margin-left:-21px;
+  margin-top:9px;
+  margin-left:-19px;
 }
 .sun {
   margin-top:-18px;
-  margin-left:4px;
+  margin-left:3px;
 }
 
 
@@ -181,13 +181,13 @@ i{
   }
   .moon{
     font-size:10px;
-    margin-top:4px;
-    margin-left:-16.5px;
+    margin-top:3px;
+    margin-left:-16px;
   }
   .sun {
     font-size:10px;
     margin-top:-12px;
-    margin-left:-3px;
+    margin-left:-4px;
   }
 }
 
