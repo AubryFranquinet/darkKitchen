@@ -10,18 +10,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <label class="switch">
-        <div class="moon"><i class= "fa fa-moon-o"></i></div> 
-        <div class="sun"> <i class="fa fa-sun-o"></i></div> 
-      <input type="checkbox" checked>
+        <div id="moon"><i class="fa fa-moon-o"></i></div>
+        <div id="sun"> <i class="fa fa-sun-o"></i></div>
+        <input type="checkbox" checked>
         <span class="slider round"></span>
     </label>
 
     <main>
         <header>
             <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-                <source src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/GtuAR0I/videoblocks-delicious-italian-pizza-served-on-black-wooden-table-with-various-ingeriends-on-side_bddcfwmzl__244deade4cc05d67604b4fd439a539c7__P360.mp4" type="video/mp4">
+                <source
+                    src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/GtuAR0I/videoblocks-delicious-italian-pizza-served-on-black-wooden-table-with-various-ingeriends-on-side_bddcfwmzl__244deade4cc05d67604b4fd439a539c7__P360.mp4"
+                    type="video/mp4">
             </video>
             <p class="subtitle">Benvenuti a</p>
             <h1>Dolcello</h1>
@@ -30,7 +33,7 @@
                 <a href="./index.html">home</a>
                 <a href="./index.html">about</a>
                 <img src="./logo/trolleyWhite.png" alt="basket" onclick="openNav()">
-                
+
             </nav>
 
 
@@ -53,7 +56,7 @@
                         </nav>
                         <nav class="product-details">
                             <nav class="product-title">Pizza 4 from'</nav>
-                            
+
                         </nav>
                         <nav class="product-price">12.99</nav>
                         <nav class="product-quantity">
@@ -73,7 +76,7 @@
                         </nav>
                         <nav class="product-details">
                             <nav class="product-title">Pasta Pizza</nav>
-                            
+
                         </nav>
                         <nav class="product-price">45.99</nav>
                         <nav class="product-quantity">
@@ -110,9 +113,37 @@
                 </nav>
             </nav>
         </header>
+        <script src="data.js"></script>
+        <footer>
+            <h1 id="dolcello">Dolcello</h1>
+            <div class='grid'>
+                <div class='grid-item'>
+                    <p class="foot">
+                    <h2>Contact</h2>
+                    </p>
+                    <p class="foot">Dolcello</p>
+                    <p class="foot">Bruxelles</p>
+                    <p class="foot">Cantersteen,14</p>
+                    <p class="foot">0489/75.58.74</p>
+                </div>
+
+                <div class='grid-item'>
+                    <p class="foot">
+                    <h2>Informations</h2>
+                    </p>
+                    <p class="foot">Condition d'utilisation</p>
+                    <p class="foot">Déclaration de confidentialité</p>
+                    <p class="foot">Politique d'utilisation des cookies</p>
+                    <p class="foot"><i class="fa fa-instagram" style="font-size:24px"> </i><i class="fa fa-facebook-f" style="font-size:24px"> </i><i class="fa fa-twitter"></i><i class="fa fa-map-marker"></i></p>
+                </div>
+            </div>
+        </footer>
     </main>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./script.js"></script>
-    <script src="data.js"></script>
+
+    <script src="dark.js"></script>
 </body>
+
 </html>
