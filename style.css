@@ -1,6 +1,6 @@
 .dark-mode {
   background-color:#0c1b3c;
-  color: whitesmoke;
+  color:whitesmoke;
 }
 
 .switch {
@@ -10,6 +10,7 @@
   height: 34px;
   top:20px;
   left:20px;
+  z-index:1;
 }
 
 .switch input { 
@@ -28,7 +29,7 @@
   background-color: whitesmoke;
   -webkit-transition: .4s;
   transition: .4s;
-  z-index:-99;
+  z-index:1;
 }
 
 .slider:before {
@@ -38,7 +39,7 @@
   width: 26px;
   left: 5px;
   bottom: 3.5px;
-  background-color: black;
+  background-color: #0c1b3c;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -47,7 +48,7 @@ input:checked + .slider:before {
 }
 
 input:checked + .slider {
-  background-color: black;
+  background-color: #0c1b3c;
 }
 
 input:checked + .slider:before {
@@ -67,21 +68,22 @@ i:hover{
   cursor:pointer;
 }
 i{
-  z-index:100;
   display:flex;
   justify-content: space-around;
 }
-.moon{
+#moon{
   margin-top:9px;
   margin-left:-19px;
+  z-index:10;
 }
-.sun {
+#sun {
   margin-top:-18px;
   margin-left:3px;
+  z-index:10;
 }
 
 
-@media screen and (max-width:700px){
+@media screen and (max-width:650px){
   body {
       background-color:#eedcc4 ;
   }
@@ -119,7 +121,7 @@ i{
     width: 13px;
     left: 2px;
     bottom: 2px;
-    background-color: black;
+    background-color: #0c1b3c;
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -128,7 +130,7 @@ i{
   }
   
   input:checked + .slider {
-    background-color: black;
+    background-color: #0c1b3c;
   }
   
   input:checked + .slider:before {
@@ -145,12 +147,11 @@ i{
     border-radius: 50%;
   }
   footer {
-      background-color: whitesmoke;
+      background-color:#eedcc4;
       color: #0c1b3c;
       position: sticky;
       width: 360px;
       margin-top: 450px;
-      background-image: url("pasta.png");
       background-repeat: no-repeat;
       background-size: cover;
   }
@@ -164,8 +165,9 @@ i{
       position: relative;
       text-align: left;
   }
-  h1 {
+ #dolcello {
       text-align: center;
+      font-size:50px;
   } 
   p {
       font-size: 18px;
@@ -191,7 +193,7 @@ i{
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
 body {
   background-color: #eedcc4;
 }
@@ -200,7 +202,7 @@ footer {
   background-color: #eedcc4;
   color: #0c1b3c;
   position: sticky;
-  margin-top: 900px;
+  margin-top: 0px;
   background-image: url("pasta.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -225,9 +227,13 @@ margin: 0;
 }
 .grid-item {
   margin-left: 300px;
+  margin-top: 250px;
 }
-h1 {
+#dolcello {
+margin-top: -100px;
 text-align: center;
+color: #0c1b3c;
+font-size:100px;
 }
 i {
   margin-left: 30px;
@@ -246,7 +252,7 @@ body {
 }
 
 body {
-    background: #333;
+    background: #eedcc4;
     width: 100%;
 }
 
@@ -326,7 +332,6 @@ a:hover {
     color: whitesmoke;
     text-decoration: none;
 }
-
 
 /* selected link */
 
