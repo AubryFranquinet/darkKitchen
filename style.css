@@ -16,9 +16,6 @@ body {
     width: 100%;
 }
 
-
-/* video background */
-
 #background-video {
     height: 100vh;
     width: 100vw;
@@ -31,7 +28,8 @@ body {
     z-index: -1;
 }
 
-p {
+.subtitle { 
+
     color: white;
     font-size: larger;
     margin: 0;
@@ -179,6 +177,29 @@ img {
         font-size: 18px;
     }
 }
+
+
+.dishes {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.dish {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 2em;
+}
+
+.dish img {
+    width: 100%;
+}
+
+
+
+
+/* ***************TEST************** */
 
 @import "compass/css3";
 
