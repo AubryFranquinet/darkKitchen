@@ -3,8 +3,8 @@ function openNav() {
     if (x.matches) {
         document.getElementById("mySidenav").style.width = "300px";
     }
-    else{
-    document.getElementById("mySidenav").style.width = "1000px";
+    else {
+        document.getElementById("mySidenav").style.width = "1000px";
     }
 }
 
