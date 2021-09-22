@@ -1,6 +1,6 @@
 .dark-mode {
   background-color:#0c1b3c;
-  color: whitesmoke;
+  color:whitesmoke;
 }
 
 .switch {
@@ -10,7 +10,7 @@
   height: 34px;
   top:20px;
   left:20px;
-  z-index:98;
+  z-index:1;
 }
 
 .switch input { 
@@ -29,7 +29,7 @@
   background-color: whitesmoke;
   -webkit-transition: .4s;
   transition: .4s;
-  z-index:98;
+  z-index:1;
 }
 
 .slider:before {
@@ -71,15 +71,15 @@ i{
   display:flex;
   justify-content: space-around;
 }
-.moon{
+#moon{
   margin-top:9px;
   margin-left:-19px;
-  z-index:101;
+  z-index:10;
 }
-.sun {
+#sun {
   margin-top:-18px;
   margin-left:3px;
-  z-index:101;
+  z-index:10;
 }
 
 
@@ -235,7 +235,6 @@ text-align: center;
 color: #0c1b3c;
 font-size:100px;
 }
-
 i {
   margin-left: 30px;
 }
@@ -253,7 +252,7 @@ body {
 }
 
 body {
-    background: #333;
+    background: #eedcc4;
     width: 100%;
 }
 
