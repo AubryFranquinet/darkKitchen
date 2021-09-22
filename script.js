@@ -36,6 +36,7 @@ $('.product-removal button').click(function () {
 });
 
 
+
 /* Recalculate cart */
 function recalculateCart() {
     var subtotal = 0;
