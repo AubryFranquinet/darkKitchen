@@ -32,7 +32,7 @@
     {
         name: 'Fettuccine Carbonara',
         description: 'Pancetta bacon with shallots in a parmesan cream sauce over fettuccine',
-        picture: './images/pasta/fettucine-carbonara.jpg',
+        picture: './images/pasta/fettuccine-carbonara.jpg',
         price: 13,
         category: 'pasta',
     },

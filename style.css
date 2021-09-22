@@ -16,7 +16,7 @@ body {
     width: 100%;
 }
 
-p {
+.subtitle {
     color: white;
     font-size: larger;
     margin: 0;
@@ -176,6 +176,7 @@ img {
     display: flex;
     flex-direction: column;
     flex: 1;
+    padding: 2em;
 }
 
 .dish img {
