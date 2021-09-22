@@ -83,7 +83,7 @@ i{
 }
 
 
-@media screen and (max-width:700px){
+@media screen and (max-width:650px){
   body {
       background-color:#eedcc4 ;
   }
@@ -193,7 +193,7 @@ i{
   }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 650px) {
 body {
   background-color: #eedcc4;
 }
@@ -202,7 +202,7 @@ footer {
   background-color: #eedcc4;
   color: #0c1b3c;
   position: sticky;
-  margin-top: 900px;
+  margin-top: 0px;
   background-image: url("pasta.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -227,10 +227,15 @@ margin: 0;
 }
 .grid-item {
   margin-left: 300px;
+  margin-top: 250px;
 }
-h1 {
+#dolcello {
+margin-top: -100px;
 text-align: center;
+color: #0c1b3c;
+font-size:100px;
 }
+
 i {
   margin-left: 30px;
 }
@@ -328,7 +333,6 @@ a:hover {
     color: whitesmoke;
     text-decoration: none;
 }
-
 
 /* selected link */
 
