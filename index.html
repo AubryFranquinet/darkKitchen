@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Dolcello</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
+    <label class="switch">
+        <div class="moon"><i class= "fa fa-moon-o"></i></div> 
+        <div class="sun"> <i class="fa fa-sun-o"></i></div> 
+      <input type="checkbox" checked>
+        <span class="slider round"></span>
+    </label>
+
     <main>
         <header>
             <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
@@ -28,10 +36,6 @@
 
             <nav id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-
-
-
                 <nav class="shopping-cart">
 
                     <nav class="column-labels">
@@ -103,18 +107,12 @@
                     </nav>
 
                     <button class="checkout">Checkout</button>
-
                 </nav>
-
-
             </nav>
-
-
         </header>
     </main>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./script.js"></script>
     <script src="data.js"></script>
 </body>
-
 </html>
