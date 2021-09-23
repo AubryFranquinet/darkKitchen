@@ -25,7 +25,7 @@ body {
     background: #eedcc4;
     width: 100%;
     /* font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, sans-serif; */
-    font-weight: 100;
+    font-weight: 16px;
 }
 
 
@@ -582,10 +582,28 @@ video {
     text-align: center;
 }
 
+.dishes-title {
+    font-family: 'Koh Santepheap', cursive;
+    font-size: 2em;
+}
+
 .dish {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    margin: 1em;
     padding: 2em;
+    color: #0c1b3c;
+    border: 1px solid #0c1b3c;
+    border-radius: 0.1em;
+}
+
+.dish .picture {
+    object-fit: cover;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 1em;
+    border: 3px solid #0c1b3c;
 }
 
 .dish .name,
@@ -593,15 +611,60 @@ video {
     font-family: 'Koh Santepheap', cursive;
 }
 
+.dish .name {
+    margin-bottom: 0.75em;
+}
+ 
 .dish .description {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 0.85em;
+    margin-bottom: 1.5em;
 }
 
-.dish .picture {
-    width: 100%;
+.dish-footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dish .price {
+    align-self: flex-start;
+    padding: 0.2em;
+    border-top: 2px solid #0c1b3c;
+    color: #0c1b3c;
+}
+
+.dish .add-to-cart {
+    background-color: #0c1b3c;
+    padding: 0.5em;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 0.7em;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.dish .basket-icon {
+    width: 30px;    
+    height: 100%;
 }
 
 @media screen and (min-width: 600px) {
+    .dish .add-to-cart {
+        cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .dishes {
+        flex-direction: row;
+    }
+    .dish {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 900px) {
     .dishes {
         flex-direction: row;
     }
