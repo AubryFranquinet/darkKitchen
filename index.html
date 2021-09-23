@@ -9,126 +9,148 @@
     <link href="style.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <label class="switch">
-        <div id="moon"><i class="fa fa-moon-o"></i></div>
-        <div id="sun"> <i class="fa fa-sun-o"></i></div>
-        <input type="checkbox" checked>
-        <span class="slider round"></span>
-    </label>
+    <header class="header">
+        <!-- Dark mode button-->
+        <label class="switch">
+            <div class="moon"><i class="fa fa-moon-o"></i></div>
+            <div class="sun"> <i class="fa fa-sun-o"></i></div>
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
 
-    <main>
-        <header>
-            <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-                <source
-                    src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/GtuAR0I/videoblocks-delicious-italian-pizza-served-on-black-wooden-table-with-various-ingeriends-on-side_bddcfwmzl__244deade4cc05d67604b4fd439a539c7__P360.mp4"
-                    type="video/mp4">
-            </video>
-            <p class="subtitle">Benvenuti a</p>
-            <h1>Dolcello</h1>
-        
-            <nav class="links">
-                <a href="./index.html">home</a>
-                <a href="./index.html">about</a>
-                <img src="./logo/trolleyWhite.png" alt="basket" onclick="openNav()">
-        
-            </nav>
-        
-        
-            <nav id="mySidenav" class="sidenav">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        
-        
-        
-        
-                <article class="shopping-cart">
-        
-                    <nav class="column-labels">
-                        <label class="product-image">Image</label>
-                        <label class="product-details">Product</label>
-                        <label class="product-price">Price</label>
-                        <label class="product-quantity">Quantity</label>
-                        <label class="product-removal">Remove</label>
-                        <label class="product-line-price">Total</label>
+        <!-- Nav -->
+        <nav class="links">
+            <a href="./index.html">home</a>
+            <a href="./index.html">about</a>
+            <img src="./logo/trolleyWhite.png" alt="basket" onclick="openNav()">
+        </nav>
+
+        <nav id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <nav class="shopping-cart">
+                <nav class="column-labels">
+                    <label class="product-image">Image</label>
+                    <label class="product-details">Product</label>
+                    <label class="product-price">Price</label>
+                    <label class="product-quantity">Quantity</label>
+                    <label class="product-removal">Remove</label>
+                    <label class="product-line-price">Total</label>
+                </nav>
+
+                <nav class="product">
+                    <nav class="product-image">
+                        <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
                     </nav>
-        
-                    <div class="product">
-                        <div class="product-image">
-                            <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
-                        </div>
-                        <nav class="product-details">
-                            <p class="product-title">Pizza 4 from'</p>
-                        </nav>
-                        <p class="product-price">12.99</p>
-                        <nav class="product-quantity">
-                            <input type="number" value="2" min="1">
-                        </nav>
-                        <nav class="product-removal">
-                            <button class="remove-product">
-                                Remove
-                            </button>
-                        </nav>
-                        <p class="product-line-price">25.98</p>
-                    </div>
-        
-                    <div class="product">
-                        <nav class="product-image">
-                            <img src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png">
-                        </nav>
-                        <nav class="product-details">
-                            <nav class="product-title">Pasta Pizza</nav>
-        
-                        </nav>
-                        <nav class="product-price">45.99</nav>
-                        <nav class="product-quantity">
-                            <input type="number" value="1" min="1">
-                        </nav>
-                        <nav class="product-removal">
-                            <button class="remove-product">
-                                Remove
-                            </button>
-                        </nav>
-                        <p class="product-line-price">45.99</p>
-                    </div>
-        
-                    <div class="totals">
-                        <nav class="totals-item">
-                            <label>Subtotal</label>
-                            <p class="totals-value" id="cart-subtotal">71.97</p>
-                        </nav>
-                        <nav class="totals-item">
-                            <label>Tax (5%)</label>
-                            <p class="totals-value" id="cart-tax">3.60</p>
-                        </nav>
-                        <nav class="totals-item">
-                            <label>Shipping</label>
-                            <p class="totals-value" id="cart-shipping">15.00</p>
-                        </nav>
-                        <nav class="totals-item totals-item-total">
-                            <label>Grand Total</label>
-                            <p class="totals-value" id="cart-total">90.57</p>
-                        </nav>
-                    </div>
-        
-                    <button class="checkout">Checkout</button>
-        
-                </article>
-        
-        
+                    <nav class="product-details">
+                        <nav class="product-title">Pizza 4 from'</nav>
+
+                    </nav>
+                    <nav class="product-price">12.99</nav>
+                    <nav class="product-quantity">
+                        <input type="number" value="2" min="1">
+                    </nav>
+                    <nav class="product-removal">
+                        <button class="remove-product">
+                            Remove
+                        </button>
+                    </nav>
+                    <nav class="product-line-price">25.98</nav>
+                </nav>
+
+                <nav class="product">
+                    <nav class="product-image">
+                        <img src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png">
+                    </nav>
+                    <nav class="product-details">
+                        <nav class="product-title">Pasta Pizza</nav>
+
+                    </nav>
+                    <nav class="product-price">45.99</nav>
+                    <nav class="product-quantity">
+                        <input type="number" value="1" min="1">
+                    </nav>
+                    <nav class="product-removal">
+                        <button class="remove-product">
+                            Remove
+                        </button>
+                    </nav>
+                    <nav class="product-line-price">45.99</nav>
+                </nav>
+
+                <nav class="totals">
+                    <nav class="totals-item">
+                        <label>Subtotal</label>
+                        <nav class="totals-value" id="cart-subtotal">71.97</nav>
+                    </nav>
+                    <nav class="totals-item">
+                        <label>Tax (5%)</label>
+                        <nav class="totals-value" id="cart-tax">3.60</nav>
+                    </nav>
+                    <nav class="totals-item">
+                        <label>Shipping</label>
+                        <nav class="totals-value" id="cart-shipping">15.00</nav>
+                    </nav>
+                    <nav class="totals-item totals-item-total">
+                        <label>Grand Total</label>
+                        <nav class="totals-value" id="cart-total">90.57</nav>
+                    </nav>
+                </nav>
+
+                <button class="checkout">Checkout</button>
             </nav>
-        
-        
-        </header>
-        <section>
-
-
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="wrapper">
+                <div class="background">
+                    <video autoplay muted loop src="https://player.vimeo.com/external/524879719.hd.mp4?s=0b90df1e036cefc79cd68b24c291086835f7b1ed&profile_id=172&oauth2_token_id=57447761"></video>
+                </div>
+                <p class="subtitle">Benvenuti a</p>
+                
+                <h1 class="title">Dolcello</h1>
+                
+            </div>
         </section>
     </main>
-    <script src="./data.js"></script>
+
+
+    <footer class="footer">
+        <h1 class="title">Dolcello</h1>
+
+        <div class='grid'>
+            <div class='grid-item'>
+                <h2 class="subtitle">Contact</h2>
+                <p>Dolcello</p>
+                <p>Bruxelles</p>
+                <p>Cantersteen,14</p>
+                <p>0489/75.58.74</p>
+            </div>
+
+            <div class='grid-item'>
+                <h2 class="subtitle">Informations</h2>
+                <p>Condition d'utilisation</p>
+                <p>Déclaration de confidentialité</p>
+                <p>Politique d'utilisation des cookies</p>
+                <p><i class="fa fa-instagram" style="font-size:24px"> </i><i class="fa fa-facebook-f"
+                        style="font-size:24px"> </i><i class="fa fa-twitter"></i><i class="fa fa-map-marker"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="./script.js"></script>
+    <script src="data.js"></script>
+    <script src="dark.js"></script>
+
 </body>
 
 </html>

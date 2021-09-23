@@ -10,9 +10,12 @@
             document.getElementById("mySidenav").style.width = "1000px";
         }
     }
-
     function closeNav() {
         document.getElementById("mySidenav").style.width = "0";
+
+    else {
+        document.getElementById("mySidenav").style.width = "1000px";
+
     }
 
 
