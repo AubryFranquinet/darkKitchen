@@ -18,7 +18,7 @@
 <body>
     <header class="header">
         <!-- Dark mode button-->
-        <label class="switch">
+        <label class="switch" onclick= "myFunction()">
             <div class="moon"><i class="fa fa-moon-o"></i></div>
             <div class="sun"> <i class="fa fa-sun-o"></i></div>
             <input type="checkbox" checked>
@@ -32,99 +32,23 @@
             <img src="./logo/trolleyWhite.png" alt="basket" onclick="openNav()">
         </nav>
 
-        <nav id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <nav class="shopping-cart">
-                <nav class="column-labels">
-                    <label class="product-image">Image</label>
-                    <label class="product-details">Product</label>
-                    <label class="product-price">Price</label>
-                    <label class="product-quantity">Quantity</label>
-                    <label class="product-removal">Remove</label>
-                    <label class="product-line-price">Total</label>
-                </nav>
 
-                <nav class="product">
-                    <nav class="product-image">
-                        <img src="https://s.cdpn.io/3/dingo-dog-bones.jpg">
-                    </nav>
-                    <nav class="product-details">
-                        <nav class="product-title">Pizza 4 from'</nav>
-
-                    </nav>
-                    <nav class="product-price">12.99</nav>
-                    <nav class="product-quantity">
-                        <input type="number" value="2" min="1">
-                    </nav>
-                    <nav class="product-removal">
-                        <button class="remove-product">
-                            Remove
-                        </button>
-                    </nav>
-                    <nav class="product-line-price">25.98</nav>
-                </nav>
-
-                <nav class="product">
-                    <nav class="product-image">
-                        <img src="https://s.cdpn.io/3/large-NutroNaturalChoiceAdultLambMealandRiceDryDogFood.png">
-                    </nav>
-                    <nav class="product-details">
-                        <nav class="product-title">Pasta Pizza</nav>
-
-                    </nav>
-                    <nav class="product-price">45.99</nav>
-                    <nav class="product-quantity">
-                        <input type="number" value="1" min="1">
-                    </nav>
-                    <nav class="product-removal">
-                        <button class="remove-product">
-                            Remove
-                        </button>
-                    </nav>
-                    <nav class="product-line-price">45.99</nav>
-                </nav>
-
-                <nav class="totals">
-                    <nav class="totals-item">
-                        <label>Subtotal</label>
-                        <nav class="totals-value" id="cart-subtotal">71.97</nav>
-                    </nav>
-                    <nav class="totals-item">
-                        <label>Tax (5%)</label>
-                        <nav class="totals-value" id="cart-tax">3.60</nav>
-                    </nav>
-                    <nav class="totals-item">
-                        <label>Shipping</label>
-                        <nav class="totals-value" id="cart-shipping">15.00</nav>
-                    </nav>
-                    <nav class="totals-item totals-item-total">
-                        <label>Grand Total</label>
-                        <nav class="totals-value" id="cart-total">90.57</nav>
-                    </nav>
-                </nav>
-
-                <button class="checkout">Checkout</button>
-            </nav>
-        </nav>
     </header>
-
     <main>
         <section class="hero">
             <div class="wrapper">
-                <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
-                    <source
-                        src="https://dm0qx8t0i9gc9.cloudfront.net/watermarks/video/GtuAR0I/videoblocks-delicious-italian-pizza-served-on-black-wooden-table-with-various-ingeriends-on-side_bddcfwmzl__244deade4cc05d67604b4fd439a539c7__P360.mp4"
-                        type="video/mp4">
-                </video>
-
+                <div class="background">
+                    <video autoplay muted loop
+                        src="https://player.vimeo.com/external/524879719.hd.mp4?s=0b90df1e036cefc79cd68b24c291086835f7b1ed&profile_id=172&oauth2_token_id=57447761"></video>
+                </div>
                 <p class="subtitle">Benvenuti a</p>
 
                 <h1 class="title">Dolcello</h1>
             </div>
         </section>
-
         <!--Content from data.js-->
     </main>
+
 
     <footer class="footer">
         <h1 class="title">Dolcello</h1>
@@ -149,7 +73,8 @@
         </div>
 
         <div class="icons"><i class="fa fa-instagram" style="font-size:24px"> </i><i class="fa fa-facebook-f"
-        style="font-size:24px"> </i><i class="fa fa-twitter"></i><i class="fa fa-map-marker"></i></div>
+                style="font-size:24px"> </i><i class="fa fa-twitter"></i><i class="fa fa-map-marker"></i></div>
+
     </footer>
 
     <!-- Scripts -->
@@ -157,6 +82,7 @@
     <script src="./script.js"></script>
     <script src="data.js"></script>
     <script src="dark.js"></script>
+
 </body>
 
 </html>
