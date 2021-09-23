@@ -592,7 +592,6 @@ body {
     border-top: 3px ridge #0c1b3c;
     border-radius: 1%;
     border-top: double;
-    margin-bottom:50px;
 }
 
   
@@ -637,18 +636,30 @@ body {
    margin-left:100px;
 }
 
-
 .footer i:hover {
     cursor:pointer;
 }
 
 @media screen and (max-width: 650px){
-    .footer .grid {
-        column-gap: 30px;
+    .footer .subtitle{
+        font-size:20px;
+    }
+
+    .footer .grid-item{
+        margin-left:10px;
     }
 
     .footer p {
         font-size: 20px;
+    }
+    .footer .icons {
+        margin-top:30px;
+        margin-left: 10px;
+    }
+    .footer i {
+       text-indent: 5px;
+       z-index:102;
+       margin-left: 40px;
     }
 }
 
