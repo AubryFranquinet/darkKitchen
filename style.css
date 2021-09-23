@@ -41,7 +41,6 @@ body {
     align-items: auto;
     align-content: start
 }
-
 .links {
     position: fixed;
     z-index: 100;
