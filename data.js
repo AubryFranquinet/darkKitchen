@@ -112,9 +112,9 @@
 ]
 
 // Dishes section
-let dishes = document.createElement('section');
+let dishes = document.createElement('section')
 dishes.setAttribute('class', 'dishes')
-let main = document.querySelector('main');
+let main = document.querySelector('main')
 dishes.id = 'dishes';
 
 main.appendChild(dishes);
@@ -140,13 +140,17 @@ for (let i of DISHES) {
     description.textContent = i.description
     dish.appendChild(description)
 
+    const dishFooter =  document.createElement('div')
+    dishFooter.setAttribute('class', 'dish-footer')
+    dish.appendChild(dishFooter)
+
     const price = document.createElement('span')
     price.setAttribute('class', 'price')
     price.innerText = `${i.price} €`
-    dish.appendChild(price)
+    dishFooter.appendChild(price)
 
     const add_to_cart_btn = document.createElement('button')
-    add_to_cart_btn.setAttribute('class', 'addToCart')
-    add_to_cart_btn.innerText = 'Add to Cart'
-    dish.appendChild(add_to_cart_btn)
+    add_to_cart_btn.setAttribute('class', 'add-to-cart')
+    add_to_cart_btn.innerText = 'Add to cart'
+    dishFooter.appendChild(add_to_cart_btn)
 }
