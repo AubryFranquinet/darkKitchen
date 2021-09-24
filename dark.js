@@ -1,6 +1,6 @@
-const chk = document.querySelector('.switch');
+   
+const chk = document.querySelector('label');
 
 chk.addEventListener('change', () => {
-	var element = document.body;
-	element.classList.toggle("dark-mode");
+	document.body.classList.toggle('dark-mode');
 });
