@@ -18,6 +18,7 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     margin: 0;
+    font-family: 'Koh Santepheap', cursive;
 }
 
 body {
@@ -34,38 +35,34 @@ body {
 /* HEADER */
 
 .header {
-    display: flex;
-    flex-wrap: wrap;
+    display: inline-flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: auto;
-    align-content: start
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+    /* margin-left: 10px; */
+    margin-top: 1.5vh;
+    z-index: 999;
 }
 
-.links {
-    position: fixed;
+.header .home {
+    position: relative;
+    margin-left: 34vw;
+    margin-right: 25vw;
     z-index: 100;
-    color: white;
-    font-size: 1.5em;
-    margin: 0;
-    padding-top: 5%;
-    top: 0%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
 }
 
-.links a {
-    margin: 0 10px;
-    text-align: center;
-    margin-left: 50px;
+.header .about {
+    position: relative;
+    z-index: 100;
 }
 
 .header img {
+    position: relative;
     width: 30px;
-    vertical-align: middle;
-    top: 0;
-    right: 0;
+    margin-left: 33vw;
+    z-index: 100;
 }
 
 .links a:link {
