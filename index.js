@@ -113,7 +113,34 @@ const DISHES = [
     }
 ];
 
-// Functions
+const sideMenu = document.querySelector('.shopping-cart-menu')
+const toggleMenuButton =  document.querySelector('.toggle-menu-btn')
+const closeMenuButton = document.querySelector('.close-menu-btn')
+let isSideMenuOpened = false;
+let totalShoppingCart = [];
+
+toggleMenuButton.addEventListener('click', () => openSideMenu())
+closeMenuButton.addEventListener('click', () => closeSideMenu())
+
+// // Functions
+function openSideMenu() {
+    if(isSideMenuOpened === false) {
+        sideMenu.classList.add('toggle-menu')
+    }
+}
+
+function closeSideMenu() {
+    sideMenu.classList.remove('toggle-menu')
+}
+
+(function toggleDarkMode() {
+    const darkModeButton = document.querySelector('.dark-mode-btn')
+
+    darkModeButton.addEventListener('click', () => {
+        document.body.classList.toggle('dark')
+    })
+})();
+
 (function renderDishes() {
     const main = document.querySelector('main')
 
@@ -168,27 +195,11 @@ const DISHES = [
     }
 })();
 
-(function toggleDarkMode() {
-    // Target dark mode button
-    const darkModeButton = document.querySelector('.dark-mode-btn')
+(function addDishToCart() {
+    const buttons = document.querySelectorAll('.add-to-cart')
 
-    // Listen to click event on the dark mode button
-    darkModeButton.addEventListener('click', () => {
-        // Apply change of background color and text color 
-        document.body.classList.toggle('dark')
-    })
+    buttons.forEach(button => button.addEventListener('click', (e) => {
+        isSideMenuOpened = true;
+        openSideMenu()
+    }))
 })();
-
-(function toggleSideMenu() {
-    const sideMenu = document.querySelector('.shopping-cart-menu')
-    const toggleMenuButton =  document.querySelector('.toggle-menu-btn')
-    const closeMenuButton = document.querySelector('.close-menu-btn')
-
-    toggleMenuButton.addEventListener('click', () => {
-        sideMenu.classList.toggle('toggle-menu')
-    })
-
-    closeMenuButton.addEventListener('click', () => {
-        sideMenu.classList.remove('toggle-menu')
-    })
-})()
