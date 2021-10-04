@@ -15,17 +15,13 @@ body {
     position: relative;
     background: #eedcc4;
     color: #0c1b3c;
-    font-weight: 16px;
     transition: .3s;
 }
-
 
 body.dark {
     background-color: #463E3F;
     color: #FEFCFF;
 }
-
-
 /* END GLOBAL */
 
 
@@ -43,7 +39,6 @@ header > button {
 /* END HEADER */
 
 /* MAIN */
-
 
 .shopping-cart-menu {
     position: fixed;
@@ -78,8 +73,6 @@ header > button {
     flex-direction: column;
     justify-content: space-around;
     width: 100%;
-    -webkit-transform-style: preserve-3d;
-    transform: translateZ(0);
     text-align: center;
 }
 

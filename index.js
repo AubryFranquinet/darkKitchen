@@ -49,7 +49,7 @@ const DISHES = [
     {
         name: 'Squash Ravioli',
         description: 'House-made ravioli stuffed with butternut squash in a browned-butter sage sauce',
-        picture: './images/pasta/squash-raviolDISH.jpg',
+        picture: './images/pasta/squash-ravioli.jpg',
         price: 16,
         category: 'pasta'
     },
