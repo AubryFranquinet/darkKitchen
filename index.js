@@ -1,4 +1,6 @@
- const DISHES = [
+
+// Data
+const DISHES = [
     {
         name: 'Bruschetta',
         description: 'Tomato, picked garlic, parmesan',
@@ -47,7 +49,7 @@
     {
         name: 'Squash Ravioli',
         description: 'House-made ravioli stuffed with butternut squash in a browned-butter sage sauce',
-        picture: './images/pasta/squash-ravioli.jpg',
+        picture: './images/pasta/squash-raviolDISH.jpg',
         price: 16,
         category: 'pasta'
     },
@@ -109,48 +111,84 @@
         price: 6.5,
         category: 'dessert'
     }
-]
+];
 
-// Dishes section
-let dishes = document.createElement('section')
-dishes.setAttribute('class', 'dishes')
-let main = document.querySelector('main')
-dishes.id = 'dishes';
+// Functions
+(function renderDishes() {
+    const main = document.querySelector('main')
 
-main.appendChild(dishes);
+    const foodSection = document.createElement('section')
+    foodSection.setAttribute('class', 'food-section')
+    const dishes = document.createElement('div')
+    dishes.setAttribute('class', 'dishes')
+    
+    main.appendChild(foodSection);
+    
+    let dishesTitle =  document.createElement('h2')
+    dishesTitle.setAttribute('class', 'dishes-title')
+    dishesTitle.textContent = 'Our food menu'
+    foodSection.appendChild(dishesTitle)
+    foodSection.appendChild(dishes)
+    
 
-// Dishes
-for (let i of DISHES) {
-    const dish = document.createElement('div')
-    dish.setAttribute('class', 'dish')
-    dishes.appendChild(dish)
+    // Iterate in DISHES array to render a card by item
+    for (let DISH of DISHES) {
+        const dish = document.createElement('dl')
+        dish.setAttribute('class', 'dish')
+        dishes.appendChild(dish)
+    
+        const picture = document.createElement('img')
+        picture.setAttribute('class', 'picture')
+        picture.src = DISH.picture
+        dish.appendChild(picture)
+    
+        const name = document.createElement('dt')
+        name.setAttribute('class', 'name')
+        name.textContent = DISH.name
+        dish.appendChild(name)
+    
+        const description = document.createElement('dd')
+        description.setAttribute('class', 'description')
+        description.textContent = DISH.description
+        dish.appendChild(description)
+    
+        const dishFooter =  document.createElement('div')
+        dishFooter.setAttribute('class', 'dish-footer')
+        dish.appendChild(dishFooter)
+    
+        const price = document.createElement('dd')
+        price.setAttribute('class', 'price')
+        price.innerText = `${DISH.price} €`
+        dishFooter.appendChild(price)
+    
+        const add_to_cart_btn = document.createElement('button')
+        add_to_cart_btn.setAttribute('class', 'add-to-cart')
+        add_to_cart_btn.innerText = 'Add to cart'
+        dishFooter.appendChild(add_to_cart_btn)
+    }
+})();
 
-    const picture = document.createElement('img')
-    picture.setAttribute('class', 'picture')
-    picture.src = i.picture
-    dish.appendChild(picture)
+(function toggleDarkMode() {
+    // Target dark mode button
+    const darkModeButton = document.querySelector('.dark-mode-btn')
 
-    const name = document.createElement('h3')
-    name.setAttribute('class', 'name')
-    name.textContent = i.name
-    dish.appendChild(name)
+    // Listen to click event on the dark mode button
+    darkModeButton.addEventListener('click', () => {
+        // Apply change of background color and text color 
+        document.body.classList.toggle('dark')
+    })
+})();
 
-    const description = document.createElement('p')
-    description.setAttribute('class', 'description')
-    description.textContent = i.description
-    dish.appendChild(description)
+(function toggleSideMenu() {
+    const sideMenu = document.querySelector('.shopping-cart-menu')
+    const toggleMenuButton =  document.querySelector('.toggle-menu-btn')
+    const closeMenuButton = document.querySelector('.close-menu-btn')
 
-    const dishFooter =  document.createElement('div')
-    dishFooter.setAttribute('class', 'dish-footer')
-    dish.appendChild(dishFooter)
+    toggleMenuButton.addEventListener('click', () => {
+        sideMenu.classList.toggle('toggle-menu')
+    })
 
-    const price = document.createElement('span')
-    price.setAttribute('class', 'price')
-    price.innerText = `${i.price} €`
-    dishFooter.appendChild(price)
-
-    const add_to_cart_btn = document.createElement('button')
-    add_to_cart_btn.setAttribute('class', 'add-to-cart')
-    add_to_cart_btn.innerText = 'Add to cart'
-    dishFooter.appendChild(add_to_cart_btn)
-}
+    closeMenuButton.addEventListener('click', () => {
+        sideMenu.classList.remove('toggle-menu')
+    })
+})()
